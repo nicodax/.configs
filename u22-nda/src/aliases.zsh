@@ -48,3 +48,4 @@ alias dprune="docker system prune -a --volumes"
 
 # TOMB
 alias tocd="tomb open -k $HOME/.wallpapers/wallpaper.jpeg $HOME/.tomb && cd /media/.tomb"
+alias cdt="cd /media/.tomb"
