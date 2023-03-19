@@ -7,8 +7,6 @@ ssh-keygen -t ed25519 -C "$USER_EMAIL"
 mv $HOME/.ssh/id_ed25519 $HOME/.ssh/$USER_NAME 
 mv $HOME/.ssh/id_ed25519.pub $HOME/.ssh/$USER_NAME.pub
 cat $HOME/.ssh/$USER_NAME.pub > $HOME/Downloads/.ssh.pub.key
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/nicodax
 
 # GPG
 gpg --full-generate-key

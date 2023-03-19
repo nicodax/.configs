@@ -117,3 +117,7 @@ ZSH_ALIAS_FINDER_AUTOMATIC=true
 
 export WORKON_HOME=~/.virtualenvs
 . $(asdf where python $(asdf current python))/bin/virtualenvwrapper.sh
+
+# SSH AGENT
+eval "$(ssh-agent -s)"
+ssh-add ~/.ssh/nicodax
