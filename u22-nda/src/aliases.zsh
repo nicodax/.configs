@@ -18,7 +18,6 @@ alias snaprm="sudo snap remove"
 
 # GIT
 alias gcmt="git commit -m"
-alias gpsh="git push"
 alias gst="git status"
 alias glog="git log --graph --oneline --all"
 alias gco="git checkout"
