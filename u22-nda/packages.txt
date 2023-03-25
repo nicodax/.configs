@@ -41,3 +41,4 @@ bridge-utils
 texlive
 steghide
 kdocker
+gparted
