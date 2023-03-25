@@ -116,7 +116,7 @@ ZSH_ALIAS_FINDER_AUTOMATIC=true
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 export WORKON_HOME=~/.virtualenvs
-. $(asdf where python $(asdf current python))/bin/virtualenvwrapper.sh
+. $(asdf where python)/bin/virtualenvwrapper.sh
 
 # SSH AGENT
 eval "$(ssh-agent -s)"
