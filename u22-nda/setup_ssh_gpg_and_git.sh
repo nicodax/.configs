@@ -18,4 +18,5 @@ git config --global user.name $USER_NAME
 git config --global user.email $USER_EMAIL
 git config --global core.editor $GIT_CORE_EDITOR
 git config --global user.signingkey $GPG_ID
-git config --global commit.gpgsign true
+git config --global commit.gpgsign $GIT_GPG_SIGN
+git config --global init.defaultBranch $GIT_DEFAULT_BRANCH
