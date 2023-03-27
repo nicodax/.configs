@@ -16,16 +16,27 @@ gnome-extensions enable $VITALS
 asdf plugin add nodejs $ASDF_NODEJS_GIT
 asdf install nodejs latest
 asdf global nodejs latest
+
 asdf plugin add ruby $ASDF_RUBY_GIT
 asdf install ruby latest
 asdf global ruby latest
+
 asdf plugin-add python
 asdf install python 3.8.16
 asdf install python latest
 asdf global python latest
+
 asdf plugin-add postgres
 asdf install postgres latest
 asdf global postgres latest
+
+asdf plugin add erlang $ASDF_ERLANG_GIT
+asdf install erlang latest
+asdf global erlang latest
+
+asdf plugin-add elixir $ASDF_ELIXIR_GIT
+asdf install elixir latest
+asdf global elixir latest
 
 # PYTHON VENV
 pip3 install --upgrade pip
