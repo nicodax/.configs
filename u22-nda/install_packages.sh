@@ -20,6 +20,14 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 sudo systemctl enable docker.service
 sudo systemctl enable containerd.service
+## DEB PACKAGES
+mkdir -p $DOWNLOADS
+### PROTON VPN
+wget -O $DOWNLOADS/$PROTON_VPN_DEB $PROTON_VPN_URL
+sudo apt install $DOWNLOADS/$PROTON_VPN_DEB -y -qq
+sudo apt update -qq
+sudo xargs -a protonvpn-packages.txt -r apt install -y -qq
+
 ## SNAPS
 ### VISUAL STUDIO CODE
 sudo snap install code --classic
