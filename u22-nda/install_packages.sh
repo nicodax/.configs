@@ -2,10 +2,11 @@
 # VARIABLES
 source .env
 
-# INSTALL ESSENTIAL APPLICATIONS
+# INSTALL
 ## PACKAGES
 sudo xargs -a packages.txt -r apt install -y -qq # install the packages listed on the packages.txt file
 sudo apt install linux-headers-$(uname -r) -y -qq
+
 ## DOCKER
 sudo apt remove docker docker.io containerd runc
 sudo rm -rf /var/lib/docker
@@ -21,13 +22,23 @@ sudo groupadd docker
 sudo usermod -aG docker $USER
 sudo systemctl enable docker.service
 sudo systemctl enable containerd.service
+
 ## DEB PACKAGES
 mkdir -p $DOWNLOADS
 ### PROTON VPN
 wget -O $DOWNLOADS/$PROTON_VPN_DEB $PROTON_VPN_URL
 sudo apt install $DOWNLOADS/$PROTON_VPN_DEB -y -qq
 sudo apt update -qq
-sudo xargs -a protonvpn-packages.txt -r apt install -y -qq
+sudo xargs -a protonvpn-packages.txt -r apt install -y -qq # install the packages listed on the protonvpn-packages.txt file
+### STREMIO
+sudo xargs -a stremio-packages.txt -r apt install -y -qq # install the packages listed on the stremio-packages.txt file
+wget -O $DOWNLOADS/$LIBFDK_DEB $LIBFDK_URL
+wget -O $DOWNLOADS/$STREMIO_DEB $STREMIO_URL
+wget -O $DOWNLOADS/$LIBSSL_DEB $LIBSSL_URL
+sudo apt install $DOWNLOADS/$LIBFDK_DEB
+sudo apt install $DOWNLOADS/$LIBSSL_DEB
+sudo apt --fix-broken install -y -qq
+sudo apt install $DOWNLOADS/$STREMIO_DEB
 
 ## SNAPS
 ### VISUAL STUDIO CODE
