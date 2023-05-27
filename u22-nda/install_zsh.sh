@@ -12,7 +12,7 @@ sh -c "$(curl -fsSL $OHMYZSH_INSTALL_SCRIPT)" "" --unattended
 git clone $ZSH_AUTOSUGGESTIONS_GIT ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone $ZSH_SYNTAX_HIGHLIGHTING_GIT ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 ## INSTALL ASDF & NODE & RUBY & RAILS & PYTHON
-git clone $ASDF_GIT ~/.asdf
+git clone $ASDF_GIT $HOME/.asdf
 ## INSTALL POWERLEVEL10K
 mkdir -p $USER_FONT_PATH
 wget $MESLO_LGS_NF_REGULAR_URL -O $USER_FONT_PATH/MesloLGS-NF-Regular.ttf
@@ -23,5 +23,8 @@ git clone --depth=1 $POWERLEVEL10K_GIT ${ZSH_CUSTOM:-$HOME/.oh-my-zsh/custom}/th
 ## ZSHRC
 rm $HOME/.zshrc
 cp src/.zshrc $HOME/.zshrc
+## SCRIPTS
+mkdir -p $HOME/.scripts
+cp src/scripts/* $HOME/.scripts
 ## ALIASES
 cp src/aliases.zsh $HOME/.oh-my-zsh/custom/aliases.zsh

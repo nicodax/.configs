@@ -38,8 +38,12 @@ asdf plugin-add elixir $ASDF_ELIXIR_GIT
 asdf install elixir latest
 asdf global elixir latest
 
+asdf plugin-add redis $ASDF_REDIS_GIT
+asdf install redis latest
+asdf global redis latest
+
 # PYTHON VENV
-pip3 install --upgrade pip
+pip install --upgrade pip
 pip install virtualenv virtualenvwrapper
 asdf reshim
 

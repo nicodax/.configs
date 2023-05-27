@@ -1,4 +1,6 @@
 # EOU
+alias dipv6="bash $HOME/.scripts/disable_ipv6.sh"
+alias eipv6="bash $HOME/.scripts/enable_ipv6.sh"
 alias cls="clear"
 
 # CONFIGURATION
@@ -18,6 +20,7 @@ alias snaprm="sudo snap remove"
 
 # GIT
 alias gcmt="git commit -m"
+alias gcmta="git commit --amend"
 alias gst="git status"
 alias glog="git log --graph --oneline --all"
 alias gco="git checkout"
@@ -44,7 +47,8 @@ alias dirm="docker image rm"
 alias dvls="docker volume ls"
 alias dvrm="docker volume rm"
 
-alias dprune="docker system prune -a --volumes"
+alias dprune="bash $HOME/.scripts/dprune.sh"
+alias drmc="bash $HOME/.scripts/drmc.sh"
 
 # TOMB
 alias tocd="tomb open -k $HOME/.wallpapers/wallpaper.jpeg $HOME/.tomb && cd /media/.tomb"

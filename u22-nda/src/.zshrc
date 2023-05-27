@@ -115,9 +115,8 @@ ZSH_ALIAS_FINDER_AUTOMATIC=true
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-export WORKON_HOME=~/.virtualenvs
+export WORKON_HOME=$HOME/.virtualenvs
 . $(asdf where python)/bin/virtualenvwrapper.sh
 
-# SSH AGENT
-eval "$(ssh-agent -s)"
-ssh-add ~/.ssh/nicodax
+# DIRENV
+eval "$(direnv hook zsh)"

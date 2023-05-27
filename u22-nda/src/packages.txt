@@ -1,5 +1,5 @@
 curl
-git
+gitk
 vim
 net-tools
 build-essential
@@ -40,5 +40,8 @@ libvirt-clients
 bridge-utils
 texlive
 steghide
-kdocker
 gparted
+linux-headers-$(uname -r)
+tree
+direnv
+make

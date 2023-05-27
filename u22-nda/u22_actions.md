@@ -32,11 +32,8 @@ sudo rm -rf .scripts/.configs
 
 ### KEYBOARD SHORTCUTS
 
-* ```Super + T``` => gnome-terminal
-* ```Super + I``` => gnome-control-center
-* ```Super + Maj + F``` => firefox
-* ```Super + K``` => kdocker
-* ```Super + E``` => nautilus
+* ```Super + Maj + S``` => spotify
+* ```Super + Maj + G``` => steam
 
 # FIREFOX
 
@@ -56,10 +53,8 @@ sudo rm -rf .scripts/.configs
 
 * disable ```Ask to save logins and passwords for web sites```
 
-# KDOCKER & SPOTIFY
+### Steam
 
-Add spotify icon to kdocker:
-* download [spotify logo](https://www.freepnglogos.com/download/7053);
-* use kdocker to minimize spotify;
-* on spotify's icon in system tray, select ```Options > Set icon...```
-* on spotify's icon in system tray, select ```Options > Save settings > Spotify only```
+Open Steam Settings: `Steam > Settings`:
+* Open the `Downloads` tab and select the appropriate location;
+* Open the `Steam Play` tab and check the `Enable Steam Play for all other titles` checkbox;
