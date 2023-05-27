@@ -1,0 +1,8 @@
+elixir 1.14.5-otp-26
+erlang 26.0
+java openjdk-20.0.1
+nodejs 20.1.0
+postgres 15.3
+python 3.11.3
+ruby 3.2.1
+redis 7.0.11
