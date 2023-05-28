@@ -11,19 +11,33 @@ sudo apt install git -y -qq
 mkdir -p $HOME/.scripts
 git clone https://github.com/nicodax/.configs.git $HOME/.scripts/.configs
 cd $HOME/.scripts/.configs/u22-nda
-chmod +x main.sh
-./main.sh
-
+bash main.sh
 ### REBOOT NEEDED
 ```
 
 ```bash
 ### AFTER REBOOT
 cd $HOME/.scripts/.configs/u22-nda
-chmod +x post_install.sh
-./post_install.sh
-cd $HOME
-sudo rm -rf .scripts/.configs
+bash post_install.sh
+```
+
+## Pop Shell
+
+```bash
+cd $HOME/.scripts/.configs/u22-nda
+bash install_pop_shell.sh
+```
+
+After executing the script, it usually hangs onto a black screen. I have not yet tested this much, however, manually restarting the machine works fine.
+
+Once logged back in, open the `Extensions` application and enable the `Pop Shell` extension. Done!
+
+## Clean config scripts
+
+If needed, clean the config scripts like so:
+
+```bash
+rm -rf $HOME/.scripts/.configs
 ```
 
 # GNOME SETTINGS
@@ -32,6 +46,7 @@ sudo rm -rf .scripts/.configs
 
 ### KEYBOARD SHORTCUTS
 
+* ```Super + I``` => gnome-control-center
 * ```Super + Maj + S``` => spotify
 * ```Super + Maj + G``` => steam
 
@@ -42,6 +57,7 @@ sudo rm -rf .scripts/.configs
 * uBlock Origin
 * LastPass: Free Password Manager
 * I don't care about cookies
+* Bitwarden - Free Password Manager
 
 ## SETTINGS
 

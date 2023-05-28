@@ -3,12 +3,16 @@
 source .env
 
 # WALLPAPER
+echo " ##################################################### "
+echo "Setting wallpaper..."
 mkdir -p $HOME/.wallpapers
 cp /usr/share/backgrounds/canvas_by_roytanck.jpg $HOME/.wallpapers/wallpaper.jpeg
 URI="file://$HOME/.wallpapers/wallpaper.jpeg"
 gsettings set org.gnome.desktop.background picture-uri "$URI"
 
 # GNOME EXTENSIONS
+echo " ##################################################### "
+echo "Installing GNOME extensions..."
 mkdir -p $GNOME_SHELL_EXTENSIONS
 ## USER THEMES
 mkdir .extensions

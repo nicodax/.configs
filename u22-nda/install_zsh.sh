@@ -6,6 +6,8 @@ source .env
 sudo chsh -s $(which zsh) $(whoami)
 
 # OH MY ZSH
+echo " ##################################################### "
+echo "Installing and setting up Oh My Zsh..."
 ## INSTALL OH MY ZSH
 sh -c "$(curl -fsSL $OHMYZSH_INSTALL_SCRIPT)" "" --unattended
 ## INSTALL PLUGINS
@@ -27,3 +29,5 @@ mkdir -p $HOME/.scripts
 cp src/scripts/* $HOME/.scripts
 ## ALIASES
 cp src/aliases.zsh $HOME/.oh-my-zsh/custom/aliases.zsh
+## TOOL VERSIONS
+cp src/.tool-versions $HOME/.tool-versions

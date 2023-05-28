@@ -20,6 +20,3 @@ bash enable_kvm.sh
 
 # SSH & GPG & GIT CONFIG
 bash setup_ssh_gpg_and_git.sh
-
-# INSTALL PROTON GE
-bash install_proton_ge.sh
