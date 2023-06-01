@@ -24,3 +24,4 @@ git config --global core.editor $GIT_CORE_EDITOR
 git config --global user.signingkey $GPG_ID
 git config --global commit.gpgsign $GIT_GPG_SIGN
 git config --global init.defaultBranch $GIT_DEFAULT_BRANCH
+git config pull.ff only
